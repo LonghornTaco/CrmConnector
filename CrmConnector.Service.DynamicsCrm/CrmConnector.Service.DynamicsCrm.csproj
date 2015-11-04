@@ -112,7 +112,7 @@
   <ItemGroup>
     <Compile Include="DynamicsCrmContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RbaCrmContext.cs" />
+    <Compile Include="CrmContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CrmConnector.Model.DynamicsCrm\CrmConnector.Model.DynamicsCrm.csproj">

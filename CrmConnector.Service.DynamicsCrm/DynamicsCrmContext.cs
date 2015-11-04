@@ -138,11 +138,11 @@ namespace CrmConnector.Service.DynamicsCrm
          }
       }
 
-      private RbaCrmContext GetContext()
+      private CrmContext GetContext()
       {
          var connection = new CrmConnection("CRMServiceConnection");
          var org = new OrganizationService(connection);
-         var context = new RbaCrmContext(org);
+         var context = new CrmContext(org);
          return context;
       }
 
