@@ -11,7 +11,7 @@ namespace CitizenSc.CrmConnector.Web.Processors.SessionEnd
 {
    public class SyncCrmToXdb
    {
-      public ICrmContext CrmContext { get; set; }
+      public ICrmConnector CrmContext { get; set; }
 
       public void Process(SessionEndArgs args)
       {

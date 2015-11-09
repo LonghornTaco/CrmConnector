@@ -85,17 +85,9 @@
     <Content Include="App_Config\Include\CrmConnector.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CitizenSc.CrmConnector.Model.DynamicsCrm\CitizenSc.CrmConnector.Model.DynamicsCrm.csproj">
-      <Project>{e7d41863-adc5-4f40-acb7-0ac28c42a005}</Project>
-      <Name>CitizenSc.CrmConnector.Model.DynamicsCrm</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CitizenSc.CrmConnector.Model\CitizenSc.CrmConnector.Model.csproj">
       <Project>{2f65d059-9694-4a99-82b1-bc8b9b041c8a}</Project>
       <Name>CitizenSc.CrmConnector.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CitizenSc.CrmConnector.Service.DynamicsCrm\CitizenSc.CrmConnector.Service.DynamicsCrm.csproj">
-      <Project>{cf4b7943-48df-4230-b028-bc403ca81096}</Project>
-      <Name>CitizenSc.CrmConnector.Service.DynamicsCrm</Name>
     </ProjectReference>
     <ProjectReference Include="..\CitizenSc.CrmConnector.Service\CitizenSc.CrmConnector.Service.csproj">
       <Project>{d49ac006-bfe6-4c4d-824a-d240d93b2952}</Project>
