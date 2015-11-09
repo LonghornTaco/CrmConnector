@@ -11,7 +11,7 @@ namespace CitizenSc.CrmConnector.Web.Processors.SessionEnd
 {
    public class SyncCrmToXdb
    {
-      public ICrmConnector CrmContext { get; set; }
+      public ICrmConnector CrmConnector { get; set; }
 
       public void Process(SessionEndArgs args)
       {
@@ -22,9 +22,9 @@ namespace CitizenSc.CrmConnector.Web.Processors.SessionEnd
             if (Tracker.Current.Contact.Identifiers.IdentificationLevel == ContactIdentificationLevel.Known)
             {
                Sitecore.Diagnostics.Log.Info("The contact is identified - calling CRM to get contact info...", this);
-               var crmContact = CrmContext.GetInformationFromCrm(xdbContact.Identifiers.Identifier);
+               var crmContact = CrmConnector.GetInformationFromCrm(xdbContact.Identifiers.Identifier);
                if (crmContact != null)
-                  CrmContext.SyncCrmToXdb(crmContact);
+                  CrmConnector.SyncCrmToXdb(crmContact);
             }
          }
       }
